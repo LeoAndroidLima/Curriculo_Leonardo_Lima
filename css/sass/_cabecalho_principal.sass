@@ -1,0 +1,63 @@
+header
+    min-height: calc( 100vh - 94px )
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 200, 0.4)), url(../../gif/gifrobot.gif)
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+    background-repeat: no-repeat
+    position: relative
+
+.row-bn
+    min-height: calc( 100vh - 94px )
+
+.banner h1
+    border-top: 6px double $verde
+    border-bottom: 6px double $verde
+    animation: paraDireita
+    animation-duration: 4s
+    animation-fill-mode: forwards
+
+@keyframes paraDireita
+    0%
+        transform: translateX(-100px)
+        opacity: 0
+    50%
+        transform: translateX(30px)
+    100%
+        transform: translateX(0)
+        opacity: 1
+    
+.banner h1 small
+    color: $branco
+    font-family: $fonte_principal
+
+.banner h1 strong
+    color: $verde
+    font-family: $fonte_principal
+
+.btn-adiante
+    display: inline-block
+    position: absolute
+    bottom: 5%
+    left: 45%
+    color: $azul_poucoforte
+    background: $verde
+    border-radius: 10px
+    transition: all 0.5 ease
+    animation: paraBaixo
+    animation-duration: 4s
+    animation-iteration-count: infinite
+
+.btn-adiante:hover
+    background: $azul_bebe
+    color: $azul_poucoforte
+
+@keyframes paraBaixo
+    0%
+        transform: translateY(-10px)
+    50%
+        transform: translateY(10px)
+    100%
+        transform: translateY(-10px)
+
+

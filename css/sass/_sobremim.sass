@@ -1,0 +1,123 @@
+.equipe
+    padding: 30px 0 40px
+    background: rgba(0,0,0,0.6)
+    text-align: center
+    overflow: hidden
+    position: relative
+    margin-top: 50px
+
+.equipe .foto
+    display: inline-block
+    width: 130px
+    height: 130px
+    margin-bottom: 50px
+    position: relative
+    z-index: 1
+
+.equipe .foto:before
+    content: ""
+    width: 100%
+    height: 0
+    border-radius: 50%
+    background: $verde
+    position: absolute
+    bottom: 135%
+    right: 0
+    left: 0
+    transform: scale(3)
+    transition: all 0.3s linear 0s
+
+.equipe:hover .foto:before
+    height: 100%
+
+.equipe .foto:after
+    content: ""
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    background: $verde
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+
+.equipe .foto img
+    width: 100%
+    height: auto
+    border-radius: 50%
+    transform: scale(1)
+    transition: all 0.9s ease 0s
+
+.equipe:hover .foto img
+    box-shadow: 0 0 0 14px $azul_escuro
+    transform: scale(0.7)
+
+.equipe .equipe-content
+    margin-bottom: 30px
+
+.equipe .titulo
+    font-size: 22px
+    font-weight: 700
+    color: $azul_bebe
+    letter-spacing: 1px
+    text-transform: capitalize
+    margin-bottom: 5px
+
+.equipe .funcao
+    display: block
+    font-size: 15px
+    color: $verde
+    text-transform: capitalize
+
+.equipe .contatos
+    width: 100%
+    padding: 0
+    margin: 0
+    background: $azul_escuro
+    position: absolute
+    bottom: -100px
+    left: 0
+    transition: all 0.5s ease 0s
+
+.equipe:hover .contatos
+    bottom: 0
+
+.equipe .contatos li
+    display: inline-block
+    padding: 10px 20px
+    font-size: 17px
+    transition: all 0.3s ease 0s
+
+.equipe .contatos li a
+     color: $preto
+     text-decoration: none
+    
+.equipe .contatos li:hover 
+    background: $verde
+    text-decoration: none
+    cursor: pointer
+
+.equipe .contatos li a:hover 
+     color: $azul_bebe
+
+
+
+.sobre-conteudo h1
+    color: $azul_bebe
+
+.sobre-conteudo h2
+    font-family: $fonte_texto
+    color: $branco
+    font-size: 1.3rem
+    text-align: justify
+
+.fa-users
+    color: $verde
+    margin-top: 30px
+
+.sobre-texto h1
+    color: $verde
+
+
+
+
